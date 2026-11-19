@@ -49,7 +49,7 @@ After the evaluation, the web app (`webapp/akshar_web.py`) added an improved ima
 1. Open `notebooks/indic_ocr_colab.ipynb` in Google Colab.
 2. **Runtime → Change runtime type → T4 GPU.** Add a Colab secret `HF_TOKEN` (a Hugging Face token) and accept the IndicOCR model terms on Hugging Face.
 3. Run cell **1** (should print *Tesla T4*), then cell **2**, then **Runtime → Restart session**.
-4. Run cells **3, 4, 4b, S1, S2, A2, A3, A4**, then **W1**. When W1 asks, upload `webapp/akshar_web.py` and `webapp/akshar_web.html`.
+4. Run cells **3, 4, 4b, S1, S2, A2, A3, A4**, then **W1** (it downloads the website files itself). Skip A5, the old app.
 5. Open the link W1 prints. Try the pages in `test_pages/`.
 
 If Colab gives a CPU-only machine (error *"Torch not compiled with CUDA enabled"*), use **Runtime → Disconnect and delete runtime** and start again from cell 1.
