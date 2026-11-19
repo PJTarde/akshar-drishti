@@ -14,7 +14,7 @@ A web application shows all of this in the browser: upload a page, see the verdi
 
 *Sample output on a fictional test certificate: text regions (blue), table (green), signature (red), stamp (violet), Aadhaar and PAN numbers blacked out.*
 
-## How it works
+##  How it works
 
 ```
 page image ─► normalise (RGB, ≤ 2000 px)
@@ -40,7 +40,7 @@ A detailed, illustrated walk-through of every step and file is in [`docs/how-it-
 | OCR word error rate (best of 3 systems) | 0.056 (PaddleOCR 0.089, Tesseract 0.162) |
 | Time per page on a T4 GPU (fp16) | 6.7 s |
 
-The benchmark pages are generated with exact ground truth (seed 2026), so no real personal data is used. Known limits: black-ink stamps are not detected by the colour method, and the verdict is a screening aid that a person confirms.
+The benchmark pages are generated with exact ground truth (seed 2026), so no real personal data is used. Known limits: black-ink stamps are not detected by the colour method, and the verdict is of a screening aid that a person confirms.
 
 After the evaluation, the web app (`webapp/akshar_web.py`) added an improved image-masking estimate, month-name dates and landline numbers in the field rules, duplicate removal and a context label for each field. These additions were checked on test pages but have not been re-measured on the benchmark.
 
@@ -82,4 +82,4 @@ Final-year project, Department of Computer Engineering, K. K. Wagh Institute of 
 | Ayush Shirsath | Data and evaluation |
 | Nikhil Pawar | Application and testing |
 
-All names, numbers and offices in `test_pages/` are fictional and made for software testing.
+All names, numbers and office in `test_pages/` are fictional and made for software testing.
